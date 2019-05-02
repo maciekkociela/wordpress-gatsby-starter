@@ -30,5 +30,31 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-source-wordpress",
+      options: {
+        baseUrl: "cbsg.pl",
+        protocol: "https",
+        hostingWPCOM: false,
+        useACF: true,
+        acfOptionPageIds: [],
+        perPage: 100,
+        concurrentRequests: 10,
+        includedRoutes: [
+          "**/categories",
+          "**/posts",
+          "**/pages",
+          "**/media",
+          "**/news",
+          "**/slider",
+        ],
+        // Blacklisted routes using glob patterns
+        excludedRoutes: ["**/posts/1456"],
+        // use a custom normalizer which is applied after the built-in ones.
+        normalizer: function({ entities }) {
+          return entities
+        },
+      },
+    },
   ],
 }
