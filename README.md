@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's headless Wordpress CMS starter
+  Gatsby's Headless Wordpress CMS starter
 </h1>
 
 Start your Wordpress Headless CMS project with Gatsby.
