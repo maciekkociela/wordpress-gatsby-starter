@@ -34,3 +34,4 @@ Start your Wordpress Headless CMS project with Gatsby.
 
     Open gatsby-config.js and gatsby-node.js and fill them with your Wordpress site data.
 
+# cbsg-website
